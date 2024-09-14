@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+
+
+.bg {
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grass {
+  background: #9bcc50;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.poison {
+  background: #b97fc9;
 }
 
-.App-link {
-  color: #61dafb;
+.fire {
+
+  background: #fd7d24;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flying {
+  background:linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
 }
+
+.water {
+  background: #4592c4;
+}
+
+.bug {
+  background: #729f3f;
+}
+
+.normal{
+  background: #a4acaf;
+}
+.fighting{
+  background: #d56723;
+}
+.ground{
+  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+}
+.rock{
+  background: #a38c21;
+}
+.ghost{
+  background: #7b62a3;
+}
+.steel{
+  background: #9eb7b8;
+}
+.electric{
+  background: #eed535;
+}
+.psychic{
+  background: #f366b9;
+}
+.ice{
+  background: #51c4e7;
+}
+.dragon{
+  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}
+.dark{
+  background: linear-gradient(180deg, #707070 50%, #707070 50%);
+}
+.fairy{
+  background: #fdb9e9;
+}
+

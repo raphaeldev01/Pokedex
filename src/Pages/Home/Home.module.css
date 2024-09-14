@@ -1,0 +1,34 @@
+.container {
+    width: 80%;
+    max-width: 1024px;
+    background-color: #EEE;
+    padding:  10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; 
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #1a8ce2;
+    border: #1a8ce2 1px solid;
+    outline: none;
+    margin: 25px; 
+    width: 200px;
+    color: #eee;
+    font-family: Poppins;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
