@@ -70,9 +70,9 @@ const ByType = (props) => {
                             <a href="/type/dark" className='dark'>dark</a>
                             <a href="/type/fairy" className='fairy'>fairy</a>
                             <div></div>
-                            <a href='/'>Clear filter</a>
                         </div>
                     </div>
+                    <a className={Styles.clear} href='/'>Clear filter</a>
                     <div></div>
                 </div>
                 <div className={`${filterEnable ? Styles.enable : "false"} ${Styles.filter}`} onClick={handleFilter}><Arrow size="15px" /> </div>

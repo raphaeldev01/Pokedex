@@ -50,10 +50,27 @@
     background: #1a8ce2;
     width: 100%;
     transition: all .5s;
+    display: flex;
+    flex-direction: column;
 }
 
 .filterOpt.enable {
-    height: 220px;
+    height: 250px;
+}
+
+.clear {
+    text-decoration: none;
+    text-align: center;
+    font-family: Poppins;
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #11111185;
+    background-color: #999;
+    margin: auto;
+    width: 90%;
 }
 
 .filter svg {
@@ -97,4 +114,47 @@
 .tipesOpt a:last-child {
     
     background-color: #bcbcbc;
+}
+
+@media (max-width: 1124px) {
+    .list {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .list {
+        grid-template: "1fr 1fr 1fr 1fr";
+    }
+}
+@media (max-width: 800px) {
+    .list {
+        grid-template: "1fr 1fr 1fr ";
+    }
+}
+@media (max-width: 600px) {
+    .list {
+        grid-template: "1fr 1fr ";
+    }
+    .filterOpt.enable {
+        height: 300px;
+    }
+    .tipesOpt {
+        grid-template: "1fr 1fr 1fr 1fr";
+
+    }
+}
+@media (max-width: 400px) {
+    .list {
+        grid-template: "1fr";
+        width: 80%;
+    }
+
+    .filterOpt.enable {
+        height: 340px;
+    }
+    .tipesOpt {
+        grid-template: "1fr 1fr 1fr ";
+
+    }
 }

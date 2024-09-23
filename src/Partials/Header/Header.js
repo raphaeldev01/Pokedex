@@ -17,7 +17,7 @@ const Header = () => {
     setText(search)
     if (search.length < 1) return setSearchPoke([])
 
-    const newArr = allPoke.filter(r => r.name.includes(search))
+    const newArr = allPoke.filter(r => r.name.includes(search.toLowerCase()))
     setSearchPoke(newArr.slice(0, 10));
     console.log(newArr);
   }
@@ -30,11 +30,10 @@ const Header = () => {
   return (
     <div className={Styles.header}>
       <div className={Styles.inpt}>
-        <input type='text' onChange={handleSearch} value={text} placeholder='Pesquisar' />
+        <input type='text' onChange={handleSearch} value={text} placeholder='Search' />
         <Search size={"40px"} />
       </div>
       <div className={Styles.opts}>
-
         <div>{searchPoke.map(p => { return (<a className={Styles.opt} href={`/pokemon/${p.id}`}>{p.name}</a>) })}</div>
       </div>
 
